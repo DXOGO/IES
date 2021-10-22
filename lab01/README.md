@@ -46,4 +46,4 @@ In a simple project, for example weather forecast project in LAB01, we will need
 
 Gson: Java library used to convert Java Objects into their JSON representation
 Square’s Retrofit: a type-safe HTTP client for Java that allows mapping an external REST API into a local (Java) interface.
-Declare both dependencies in your POM.
+Declare both dependencies in your POM

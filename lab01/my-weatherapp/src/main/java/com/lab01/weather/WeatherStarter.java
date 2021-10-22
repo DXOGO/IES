@@ -4,6 +4,11 @@ import retrofit2.Call;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+<<<<<<< HEAD
+=======
+
+import java.util.Scanner;
+>>>>>>> 2cf7c1ec938c8c47cbb0ee5db0cc8b251ad682f4
 import java.util.logging.Logger;
 
 /**
@@ -18,7 +23,11 @@ public class WeatherStarter {
      */
     private static final Logger logger = Logger.getLogger(WeatherStarter.class.getName());
 
+<<<<<<< HEAD
     public static void main(String[] args) {
+=======
+    public static void  main(String[] args ) {
+>>>>>>> 2cf7c1ec938c8c47cbb0ee5db0cc8b251ad682f4
 
         /*
         get a retrofit instance, loaded with the GSon lib to convert JSON into objects
