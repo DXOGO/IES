@@ -1,5 +1,4 @@
-/home/dxogo/Desktop/3ANO/SEMESTRE1/IES/Praticas/IES_98595/lab01/my-weatherapp/src/main/java/com/lab01/weather/WeatherStarter.java
-/home/dxogo/Desktop/3ANO/SEMESTRE1/IES/Praticas/IES_98595/lab01/my-weatherapp/src/main/java/com/lab01/weather/IpmaService.java
-/home/dxogo/Desktop/3ANO/SEMESTRE1/IES/Praticas/IES_98595/lab01/my-weatherapp/src/main/java/com/lab01/weather/IpmaCityForecast.java
-/home/dxogo/Desktop/3ANO/SEMESTRE1/IES/Praticas/IES_98595/lab01/my-weatherapp/src/main/java/com/lab01/weather/App.java
-/home/dxogo/Desktop/3ANO/SEMESTRE1/IES/Praticas/IES_98595/lab01/my-weatherapp/src/main/java/com/lab01/weather/CityForecast.java
+/home/dxogo/Desktop/3ANO/SEMESTRE1/IES/Praticas/IES_98595/lab01/my-weatherapp/src/main/java/com/weather/app/CityForecast.java
+/home/dxogo/Desktop/3ANO/SEMESTRE1/IES/Praticas/IES_98595/lab01/my-weatherapp/src/main/java/com/weather/app/IpmaCityForecast.java
+/home/dxogo/Desktop/3ANO/SEMESTRE1/IES/Praticas/IES_98595/lab01/my-weatherapp/src/main/java/com/weather/app/WeatherStarter.java
+/home/dxogo/Desktop/3ANO/SEMESTRE1/IES/Praticas/IES_98595/lab01/my-weatherapp/src/main/java/com/weather/app/IpmaService.java

@@ -1,4 +1,4 @@
-package com.lab01.weather;
+package com.weather.app;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -12,4 +12,6 @@ public interface IpmaService {
     @GET("forecast/meteorology/cities/daily/{city_id}.json")
     Call<IpmaCityForecast> getForecastForACity(@Path("city_id") int cityId);
 
+    @GET("distrits-islands.json")
+    Call<IpmaCityForecast> getCityID();
 }

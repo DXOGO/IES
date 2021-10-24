@@ -1,1 +1,4 @@
-com/lab01/weather/App.class
+com/weather/app/IpmaCityForecast.class
+com/weather/app/IpmaService.class
+com/weather/app/CityForecast.class
+com/weather/app/WeatherStarter.class
