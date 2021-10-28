@@ -29,7 +29,7 @@ my-app
                 `-- mycompany
                     `-- app
                         `-- AppTest.java
-                        
+                        	
 src/main/java: contains the project source code
 src/test/java: contains the test source
 pom.xml file: project's Project Object Model, or POM (the core of a project's configuration in Maven. It is a single configuration file that contains the majority of information required to build a project in just the way you want)
