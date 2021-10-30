@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1 th:text="'Hello, ' + ${name} + '!'" />
+
+<p th:text="'Your message is: ' + ${message}" />
+
+<p>To costumize the message add the following to the url: ?name=YOURNAME&message=YOURMESSAGE</p>
+
+<p>Back to <a href="/">Home</a></p>
+</body>
+</html>
