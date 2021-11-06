@@ -5,12 +5,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<h1 th:text="'Hello, ' + ${name} + '!'" />
+<h1 th:text="'Hello ' + ${name} + '!'" />
 
-<p th:text="'Your message is: ' + ${message}" />
+<p th:text="'Message: ' + ${message}" />
 
-<p>To costumize the message add the following to the url: ?name=YOURNAME&message=YOURMESSAGE</p>
+<p>To customize name and message add the following to the url: ?name=YOURNAME&message=YOURMESSAGE</p>
 
-<p>Back to <a href="/">Home</a></p>
+<p>Back to <a href="/">Home</a></p> <!-- goes back to index.html-->
 </body>
 </html>

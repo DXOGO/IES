@@ -2,11 +2,7 @@
 
 ## Notes on Lab02.1 - **Java at the server-side and the role of application containers**
 
-A Servlet is a Java
-class that runs at the server, handles (client) requests, processes them, and reply with a response. When an application running in a web server
-receives a request, the Server hands the request to
-the Servlet Container which in turn passes it to the
-target Servlet.
+A Servlet is a Java class that runs at the server, handles (client) requests, processes them, and reply with a response When an application running in a web server receives a request, the Server hands the request to the Servlet Container which in turn passes it to the target Servlet.
 
 ### Running **Tomcat** server
 
@@ -101,8 +97,6 @@ applications.
 Running ```./mvnw spring-boot:run``` and access your browser at <http://localhost:8080/> (8080 if default port) you should retrieve a page produced by Spring
 Boot.
 
-#### **Attention**: port *8080* is also Tomcat's port so make sure it's not running at the moment
-
 ### To change the port
 
 - On *main/java/resources/**application.propreties*** write ```server.port=XXXX```
@@ -115,28 +109,59 @@ This ensures that HTTP GET requests to **/greeting** are mapped to the greeting(
 ### Important to read
 
 ## **[Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/#initial)**
+
 \
 \
 .
 
 ## Notes on Lab02.4 - **Lab 2 Wrapping-up & integrating concepts**
 
-**A**. What are the responsibilities/services of a “servlet container”?
-\
-Answer:
+### **A**. What are the responsibilities/services of a “servlet container”?
 
-**B**. Explain, in brief, the “dynamics” of Model-View-Controller approach used in Spring Boot to serve web content. (You may exemplify with the context of the previous exercises.)
-\
-Answer:
+A servlet container manages and is responsible for the lifecycle of servlets, and maps URL to a particular servlet to ensure the requester has the correct access-rights.
 
-**C**. Inspect the POM.xml for the previous Spring Boot projects. What is the role of the “starters” dependencies?
-\
-Answer:
+\.
 
-**D**. Which annotations are transitively included in the @SpringBootApplication?
-\
-Answer:
+### **B**. Explain, in brief, the “dynamics” of Model-View-Controller approach used in Spring Boot to serve web content. (You may exemplify with the context of the previous exercises.)
 
-**E**. Search online for the topic “Best practices for REST API design”. From what you could learn, select your “top 5” practices, and briefly explain them   in you own words.
-\
-Answer:
+Spring Boot uses the MVC pattern in which the application is divided in 3 components:
+
+- **Model**:  middleware between the Controller and the View, which is being controlled and updated by the Controller.
+- **Controller**: after an HTTP request is made, it receives it and processes it.
+- **View**: component that allows the user to see the processed request.
+
+\.
+
+### **C**. Inspect the POM.xml for the previous Spring Boot projects. What is the role of the “starters” dependencies?
+
+It provides all the default dependencies so that we can run the Spring Boot application without adding any other dependencies.
+
+\.
+
+### **D**. Which annotations are transitively included in the @SpringBootApplication?
+
+@EnableAutoConfiguration, @ComponentScan and @Configuration
+
+\.
+
+### **E**. Search online for the topic “Best practices for REST API design”. From what you could learn, select your “top 5” practices, and briefly explain them   in you own words
+
+#### **Use logical nesting on endpoints**
+
+When designing endpoints, it makes sense to group those that contain associated information. That is, if one object can contain another object, you should design the endpoint to reflect that.
+
+#### **Handle errors gracefully and return standard error codes**
+
+To eliminate confusion for API users when an error occurs, we should handle errors gracefully and return HTTP response codes that indicate what kind of error occurred. This gives maintainers of the API enough information to understand the problem that’s occurred.
+
+#### **Maintain good security practices**
+
+Most communication between client and server should be private since we often send and receive private information. Therefore, using SSL/TLS for security is a must.
+
+#### **Versioning our APIs**
+
+We should have different versions of API if we’re making any changes to them that may break clients.
+
+#### **Cache data to improve performance**
+
+We can add caching to return data from the local memory cache instead of querying the database to get the data every time we want to retrieve some data that users request.
